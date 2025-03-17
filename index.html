@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page N.I</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden-back {
+            filter: brightness(0);
+            transition: filter 1s ease-in-out;
+        }
+
+        .show {
+            filter: brightness(1);
+            transition: filter 1s ease-in-out;
+        }
+
+        .flip-card-inner {
+            transform: rotateY(180deg);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .scroll-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .card-img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        section {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+        body {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-700">
+    <section id="home" class="h-screen flex items-center justify-center text-6xl font-bold text-gray-500">
+        N.I
+    </section>
+
+
+
+    <section id="market"
+        class="h-screen flex flex-col items-center justify-center px-6 text-center opacity-0 transition-opacity duration-1000">
+        <h2 class="text-3xl font-bold mb-8">Conheça as próximas N.I que em breve estarão disponíveis no mercado</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <!-- 11 cards -->
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="arthur.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-AA</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="david.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-DJ</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="leandro.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-LC</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="lucas.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-LS</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="marcelo.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-MN</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="mykoll.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-MD</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="robson.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-RR</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="stephanie.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-SM</p>
+                    <p class="text-sm">Desenvolvedora FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="tamara.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-TR</p>
+                    <p class="text-sm">Desenvolvedora FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="thamiris.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-TL</p>
+                    <p class="text-sm">Desenvolvedora FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-gray-800 text-lg p-4">
+                    <img src="yago.png" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">N.I-YA</p>
+                    <p class="text-sm">Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+
+            <div class="relative w-40 h-52 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
+                data-card>
+                <div
+                    class="absolute inset-0 hidden-back flex flex-col items-center justify-center text-white bg-blue-800 text-lg p-4">
+                    <img src="luana.jfif" alt="Foto da N.I" class="card-img">
+                    <p class="mt-2 font-semibold">Nome da N.I</p>
+                    <p class="text-sm">Human Learning</p>
+                </div>
+            </div>
+
+            <!-- Repita o card 10 vezes -->
+        </div>
+        <button id="revealBtn" class="mt-3 px-6 py-2 bg-blue-500 text-white rounded-lg">Revelar</button>
+    </section>
+
+    <section id="about"
+        class="h-screen flex flex-col items-center justify-center px-6 opacity-0 transition-opacity duration-1000">
+        <h2 class="text-4xl font-bold text-center">O que é N.I?</h2>
+        <div class="max-w-3xl text-xl text-left text-justify break-words mt-4">
+            <p class="indent-8">N.I é uma inteligência natural.</p>
+            <p class="mt-4 indent-8">
+                A Inteligência Natural (IN) seria a capacidade cognitiva inata dos seres vivos, especialmente dos
+                humanos, de aprender, raciocinar, resolver problemas, tomar decisões e se adaptar ao ambiente.
+                Diferente da IA, que processa dados com base em algoritmos e aprendizado de máquina, a IN envolve
+                criatividade, intuição, emoções, subjetividade e experiência adquirida ao longo da vida.
+            </p>
+        </div>
+
+        <h2 class="text-4xl font-bold text-center mt-6">Parabéns, N.Is!</h2>
+    </section>
+
+
+    <div id="scrollBtn" class="scroll-btn">↓</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#about').classList.add('opacity-100');
+            document.querySelector('#market').classList.add('opacity-100');
+        });
+
+        document.querySelector("#revealBtn").addEventListener("click", () => {
+            document.querySelectorAll("[data-card]").forEach(card => {
+                const div = card.querySelector("div");
+
+                div.classList.toggle("hidden-back");
+                div.classList.toggle("show");
+            });
+
+            revealBtn.textContent = revealBtn.textContent === "Revelar" ? "Ocultar" : "Revelar";
+        });
+
+
+        function scrollToSection(direction) {
+            const sections = document.querySelectorAll("section");
+            let currentIndex = 0;
+            sections.forEach((section, index) => {
+                if (window.scrollY >= section.offsetTop - 50) {
+                    currentIndex = index;
+                }
+            });
+            const targetSection = sections[currentIndex + direction];
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        document.querySelector("#scrollBtn").addEventListener("click", () => scrollToSection(1));
+        window.addEventListener("wheel", (event) => scrollToSection(event.deltaY > 0 ? 1 : -1));
+        window.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowDown") scrollToSection(1);
+            if (event.key === "ArrowUp") scrollToSection(-1);
+        });
+    </script>
+</body>
+
+</html>
